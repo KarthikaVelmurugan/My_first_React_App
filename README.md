@@ -1,3 +1,16 @@
+# My First React App - Screenshot
+
+![Screenshot from 2022-01-11 21-02-13](https://user-images.githubusercontent.com/64409033/148972543-cc23c85f-0c27-43c1-9eef-40146dc320eb.png)
+
+# React - Components
++ Home Component  - It coupled together all Body components
++ Header Componet - It copuled together all Navigation items and title components
++ Footer Component - It coupled together all copywrites contents and divider bar components
+
+# Stylesheets
++ App.css - It has all major components styles utilities
++ button.scss - It holds the button animation utilities
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
