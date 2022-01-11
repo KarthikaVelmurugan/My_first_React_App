@@ -1,0 +1,146 @@
+.button {
+    &.alternative {
+        --color-hover: #b11914;
+        --background: #b11914;
+        --hover-back: #b11914;
+        --hover-front: #F6F8FF;
+    }
+    &.simple {
+        --background: #b11914;
+        --background-hover: #b11914;
+    }
+}
+
+.button {
+    --color: white;
+    --color-hover: var(--color);
+    --background: #b11914;
+    --background-hover: var(--background);
+    --hover-back: #b11914;
+    --hover-front: #b11914;
+    padding: 12px 23px;
+    
+    border-radius: 10px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: oblique;
+    letter-spacing: .02em;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    color: var(--c, var(--color));
+    background: var(--b, var(--background));
+    transition: color .2s linear var(--c-d, .2s), background .3s linear var(--b-d, .2s);
+    &:not(.simple) {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--pb, var(--hover-back));
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200%;
+            border-radius: var(--br, 40%);
+            transform: translateY(var(--y, 50%));
+            transition: transform var(--d, .4s) ease-in var(--d-d, 0s), border-radius .5s ease var(--br-d, .08s);
+
+        }
+        &:after {
+            --pb: var(--hover-front);
+            --d: .44s;
+        }
+    }
+    div {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        span {
+            display: block;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            animation: var(--name, none) .7s linear forwards .18s;
+        }
+    }
+   
+}
+
+
+.learnmore {
+    &.alternative {
+        --color-hover: #c5c2c2;
+        --background: #b1a2a2;
+        --hover-back: #c7b0af;
+        --hover-front: #ced0d6;
+    }
+    &.simple {
+        --background: #ddd0d0;
+        --background-hover: #a19696;
+    }
+}
+
+.learnmore {
+    --color: rgb(19, 17, 17);
+    --color-hover: var(--color);
+    --background: #b9aeae;
+    --background-hover: var(--background);
+    --hover-back: #b3a2a2;
+    --hover-front: #948887;
+    padding: 12px 23px;
+    
+    border-radius: 10px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: oblique;
+    letter-spacing: .02em;
+    border: none;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    color: var(--c, var(--color));
+    background: var(--b, var(--background));
+    transition: color .2s linear var(--c-d, .2s), background .3s linear var(--b-d, .2s);
+    &:not(.simple) {
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            background: var(--pb, var(--hover-back));
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 200%;
+            border-radius: var(--br, 40%);
+            transform: translateY(var(--y, 50%));
+            transition: transform var(--d, .4s) ease-in var(--d-d, 0s), border-radius .5s ease var(--br-d, .08s);
+
+        }
+        &:after {
+            --pb: var(--hover-front);
+            --d: .44s;
+        }
+    }
+    div {
+        z-index: 1;
+        position: relative;
+        display: flex;
+        span {
+            display: block;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+            animation: var(--name, none) .7s linear forwards .18s;
+        }
+    }
+   
+}
